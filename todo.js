@@ -7,7 +7,7 @@ const TODOS_LS = "todos";
 const FINISHED_LS = "finishedDos";
 let toDos = [];
 let finishedDos = [];
-let idNumbers = 1;
+let idNumbers = Date.now();
 
 function deleteToDo(e) {
   const btn = e.target;
