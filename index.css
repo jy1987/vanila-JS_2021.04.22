@@ -7,6 +7,24 @@ h1 {
 }
 
 .form,
-.greetings {
+.greeting {
   display: none;
+}
+
+.showing {
+  display: block;
+}
+
+h2 {
+  color: brown;
+}
+
+.js-toDoForm {
+  margin-bottom: 20px;
+}
+
+.pending,
+.finished {
+  font-weight: 600;
+  font-size: 20px;
 }

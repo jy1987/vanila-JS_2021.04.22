@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>JY-JS</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
-    <div class="js-clock">
-      <h1>Merry Christmas</h1>
-      <h2 class="time">00d 00h 00m 00s</h2>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="what is your name" />
+    <form class="js-toDoForm">
+      <h2>What to do?</h2>
+      <input type="text" placeholder="Write a to do and Go!" />
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <script src="src/time.js"></script>
-    <script src="greeting.js"></script>
+    <div class="pending">
+      Pending
+      <ul class="js-toDoList"></ul>
+    </div>
+    <div class="finished">
+      Finished
+      <ul class="js-finishedList"></ul>
+    </div>
+
+    <script src="todo.js"></script>
   </body>
 </html>
