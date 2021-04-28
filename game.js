@@ -36,16 +36,20 @@ function handleSubmit(e) {
   const currentNum = parseInt(MyInput.value);
   saveNum(currentNum);
   const randValue = makeRand();
+  console.log(currentNum);
+  console.log(randValue);
+  if (isNaN(currentNum)) {
+    h5.innerText = "you should input any number";
+  } else {
+    h5.innerText = `you chose: ${currentNum}, the machine: ${randValue}`;
 
-  h5.innerText = `you chose: ${currentNum}, the machine: ${randValue}`;
-
-  if (currentNum !== randValue) {
-    p.innerText = "You Lose...";
-  } else if (currentNum === randValue) {
-    p.innerText = "You Win !!!";
+    if (currentNum !== randValue) {
+      p.innerText = "You Lose...";
+    } else if (currentNum === randValue) {
+      p.innerText = "You Win !!!";
+    }
   }
 }
-
 function submitNum() {
   const moveBtn = document.querySelector("button");
   moveBtn.addEventListener("click", handleSubmit);
