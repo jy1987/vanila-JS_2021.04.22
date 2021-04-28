@@ -7,19 +7,21 @@
   </head>
 
   <body>
-    <form class="js-toDoForm">
-      <h2>What to do?</h2>
-      <input type="text" placeholder="Write a to do and Go!" />
+    <h2>Random Number Game</h2>
+    <form class="js-random">
+      <h4 class="js-random__generate">Generate a number between 0 and 10</h4>
+      <input class="handle" type="range" min="0" max="200" step="1" />
     </form>
-    <div class="pending">
-      Pending
-      <ul class="js-toDoList"></ul>
-    </div>
-    <div class="finished">
-      Finished
-      <ul class="js-finishedList"></ul>
-    </div>
+    <form class="js-random__submit">
+      <h5>
+        <span>Guess the number: </span>
+        <input type="text" id="textInput" value="" />
+        <button>Play!!</button>
+        <h5 class="result"></h5>
+        <p class="win"></p>
+      </h5>
+    </form>
 
-    <script src="todo.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>
